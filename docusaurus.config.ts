@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
+// import type { webpackPlugin } from './plugins/webpack-plugin.cjs';
 
 const config: Config = {
   title: 'ScalarHub',
@@ -101,7 +102,16 @@ const config: Config = {
         // editUrl: 'https://github.com/your-repo/edit/main/apireference/',
       },
     ],
-    
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects(path) {
+          if (path.startsWith('api/guides/capabilities/chat/export-chat-dump')) {
+            return ['/guides/overview'];
+          }
+        }
+      }
+    ]
   ],
   
 
