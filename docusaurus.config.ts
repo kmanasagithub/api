@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://kmanasagithub.github.io',
   baseUrl: '/api/',
   organizationName: 'kmanasagithub',
-  projectName: 'API', // Usually your repo name.
+  projectName: 'api', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
