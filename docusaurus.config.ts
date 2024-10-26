@@ -106,7 +106,7 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         createRedirects(path) {
-          if (path.startsWith('api/guides/Overview')) {
+          if (path.startsWith('/api/guides/Overview')) {
             return ['/guides/overview'];
           }
         }
