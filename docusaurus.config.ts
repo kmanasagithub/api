@@ -10,7 +10,7 @@ const config: Config = {
   tagline: '',
   favicon: 'img/favicon.ico',
   url: 'https://kmanasagithub.github.io',
-  baseUrl: '/api/',
+  baseUrl: '/',
   organizationName: 'kmanasagithub',
   projectName: 'api', // Usually your repo name.
 
@@ -102,16 +102,16 @@ const config: Config = {
         // editUrl: 'https://github.com/your-repo/edit/main/apireference/',
       },
     ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        createRedirects(path) {
-          if (path.startsWith('/api/guides/Overview')) {
-            return [path.replace('/api/guides/Overview', '/guides/overview')];
-          }
-        }
-      }
-    ]
+    // [
+    //   '@docusaurus/plugin-client-redirects',
+    //   {
+    //     createRedirects(path) {
+    //       if (path.startsWith('/api/guides/Overview')) {
+    //         return [path.replace('/api/guides/Overview', '/guides/overview')];
+    //       }
+    //     }
+    //   }
+    // ]
   ],
   
 
