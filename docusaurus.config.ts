@@ -107,7 +107,7 @@ const config: Config = {
       {
         createRedirects(path) {
           if (path.startsWith('/api/guides/Overview')) {
-            return ['/guides/overview'];
+            return [path.replace('/api/guides/Overview', '/guides/overview')];
           }
         }
       }
